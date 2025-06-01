@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Bug Hunting Toolkit - Project Index</title>
+    <link rel="icon" type="image/x-icon" href="/api/placeholder/32/32">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles/style1.css">
+  </head>
+<body>
+    <!-- Custom cursor elements -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <img src="" alt="Penquin-Icon" class="Watermelon-icon">Penquin
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a
+                        href="index">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a
+                        href="writeups">Writeups</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a
+                        href="extentions">Extentions</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index">Home</a>
+                <a href="writeups">Writeups</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="home">
+        <div class="content">
+            <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600"><span> root@Penquin:~# </span><h> cat Home.txt </h></h1>
+            <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">█▀█ █▀▀ █▄░█ █▀█ █░█ █ █▄░█<br>█▀▀ ██▄ █░▀█ ▀▀█ █▄█ █ █░▀█</p>
+            <p style="color: var(--terminal-accent); font-weight: bold; margin-top: 15px;">Penquin simplifies vulnerability hunting without compromising depth — helping security professionals work smarter and faster</p>
+            
+            <!-- Get Started button moved here -->
+            <a href="#" class="action-btn">
+                <i class="fab fa-github"></i> View on Github
+            </a>
+        </div>
+        <div class="home-img" data-aos="zoom-in" data-aos-duration="1200">
+            <img src="images/Penquin.jpg" alt="Penquin Profile Photo">
+        </div>
+    </section>
+
+    <!-- What is Penquin Section -->
+    <div class="feature-section">
+        <h2><i class="fas fa-question-circle"></i> What is Penquin?</h2>
+        <div class="feature-card" style="max-width: none; margin-bottom: 30px;">
+            <h3><i class="fas fa-terminal"></i> Penquin</h3>
+            
+            <p style="color: var(--terminal-secondary); line-height: 1.8; margin: 15px 0;">
+                A professional toolkit that improves and simplifies the process of identifying vulnerabilities in web applications. 
+                It provides ready-to-use commands, curated resources, and structured workflows to help security researchers, 
+                penetration testers, and bug bounty hunters swiftly and simply identify and exploit security flaws.
+            </p>
+            <p style="color: var(--terminal-accent); font-weight: bold; margin: 15px 0; text-align: center; font-size: 1.1rem;">
+            </p>
+        </div>
+        <!-- Project Statistics -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3><i class="fas fa-tools"></i> Security Categories</h3>
+                <div class="stat-number">12+</div>
+                <div class="stat-description">Complete vulnerability testing categories including XSS, LFI, CORS, and more</div>
+            </div>
+
+            <div class="stat-card">
+                <h3><i class="fas fa-code"></i> Command Templates</h3>
+                <div class="stat-number">50+</div>
+                <div class="stat-description">Pre-configured one-liner commands for rapid security assessment</div>
+            </div>
+
+            <div class="stat-card">
+                <h3><i class="fas fa-puzzle-piece"></i> Browser Extensions</h3>
+                <div class="stat-number">20+</div>
+                <div class="stat-description">Curated collection of essential bug hunting browser extensions</div>
+            </div>
+
+            <div class="stat-card">
+                <h3><i class="fas fa-book"></i> Security Writeups</h3>
+                <div class="stat-number">16+</div>
+                <div class="stat-description">In-depth tutorials and methodologies from InfoSec experts</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Penquin Section -->
+    <div class="feature-section">
+        <h2><i class="fas fa-star"></i> Why Choose Penquin?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3><i class="fas fa-clock"></i> Saves Time</h3>
+                <p>Eliminates manual command research, allowing testers to focus on exploitation rather than tool configuration. 
+                Pre-built templates and automated workflows accelerate the entire testing process significantly.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><i class="fas fa-bullseye"></i> Improves Accuracy</h3>
+                <p>By using tried-and-true testing procedures, accuracy is increased and oversight is decreased. 
+                Standardized methodologies ensure consistent results and comprehensive coverage of attack vectors.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3><i class="fas fa-graduation-cap"></i> Enhances Learning</h3>
+                <p>Combines practical execution with educational resources for skill development. 
+                Detailed writeups and structured approaches help both beginners and experts improve their techniques.</p>
+            </div>
+        </div>
+    </div>
+
+        
+
+        <!-- Project Info -->
+        <div class="feature-section">
+            <h2><i class="fas fa-info-circle"></i> Project Information</h2>
+            <div class="feature-card" style="max-width: none;">
+                <h3><i class="fas fa-user"></i> About the Developer</h3>
+                <p style="color: var(--terminal-secondary); line-height: 1.8; margin: 15px 0;">
+                    This comprehensive bug hunting toolkit was developed by <strong style="color: var(--terminal-accent);">Coffinxp</strong>, 
+                    a security researcher and penetration tester. The project combines years of hands-on experience in 
+                    vulnerability assessment and bug bounty hunting into a single, easy-to-use platform.
+                </p>
+                <p style="color: var(--terminal-secondary); line-height: 1.8; margin: 15px 0;">
+                    The toolkit features over 50 pre-configured command templates, 20+ essential browser extensions, 
+                    and 16+ detailed security writeups published on Medium and InfoSec Writeups. It's designed to 
+                    streamline the reconnaissance and vulnerability discovery process for both beginners and experienced 
+                    security professionals.
+                </p>
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="terminal-footer">
+            <p style="color: var(--terminal-secondary); font-style: italic;">
+                Advanced Bug Hunting Toolkit - Empowering security researchers worldwide
+            </p>
+            <p style="color: var(--terminal-accent); margin-top: 10px; font-size: 0.9rem;">
+                Last updated: <span id="current-date"></span>
+            </p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Watermelon seed decoration
+            const toolItems = document.querySelectorAll('.tool-item');
+            
+            // Add random "seeds" to each card
+            toolItems.forEach(item => {
+                const numSeeds = Math.floor(Math.random() * 5) + 3;
+                
+                for(let i = 0; i < numSeeds; i++) {
+                    const seed = document.createElement('div');
+                    seed.classList.add('seeds-decoration');
+                    
+                    // Random position within the card
+                    const topPos = Math.floor(Math.random() * 100);
+                    const leftPos = Math.floor(Math.random() * 90) + 5;
+                    
+                    seed.style.top = `${topPos}%`;
+                    seed.style.left = `${leftPos}%`;
+                    seed.style.transform = `rotate(${Math.random() * 45}deg)`;
+                    
+                    item.appendChild(seed);
+                }
+            });
+            
+            // Scroll animation with Intersection Observer
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-on-scroll');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            // Target all article cards for scroll animation
+            document.querySelectorAll('.tool-item').forEach(item => {
+                observer.observe(item);
+            });
+            
+            // Custom cursor animation
+            const cursorDot = document.getElementById('cursor-dot');
+            const cursorOutline = document.getElementById('cursor-outline');
+            
+            // Track mouse movement
+            document.addEventListener('mousemove', (e) => {
+                const posX = e.clientX;
+                const posY = e.clientY;
+                
+                // Animate dot to follow cursor exactly
+                cursorDot.style.left = `${posX}px`;
+                cursorDot.style.top = `${posY}px`;
+                
+                // Animate outline with slight delay for trailing effect
+                cursorOutline.animate({
+                    left: `${posX}px`,
+                    top: `${posY}px`
+                }, { 
+                    duration: 500,
+                    fill: 'forwards',
+                    easing: 'ease'
+                });
+            });
+            
+            // Add special effects for interactive elements
+            const interactiveElements = document.querySelectorAll('a, button, .tool-item');
+            
+            interactiveElements.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursorDot.classList.add('cursor-hover');
+                    cursorOutline.classList.add('cursor-hover');
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    cursorDot.classList.remove('cursor-hover');
+                    cursorOutline.classList.remove('cursor-hover');
+                });
+            });
+            
+            // Handle cursor when it leaves the window
+            document.addEventListener('mouseout', () => {
+                cursorDot.style.opacity = '0';
+                cursorOutline.style.opacity = '0';
+            });
+            
+            document.addEventListener('mouseover', () => {
+                cursorDot.style.opacity = '1';
+                cursorOutline.style.opacity = '1';
+            });
+            
+        });
+    </script>
+    <script src="Script/scripts.js" defer></script>
+</body>
+</html>
